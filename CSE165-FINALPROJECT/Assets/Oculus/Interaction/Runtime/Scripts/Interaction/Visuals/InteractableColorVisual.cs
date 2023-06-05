@@ -45,7 +45,7 @@ namespace Oculus.Interaction
         }
 
         [SerializeField]
-        private ColorState _normalColorState = new ColorState() { Color = Color.white };
+        public ColorState _normalColorState = new ColorState() { Color = Color.white };
         [SerializeField]
         private ColorState _hoverColorState = new ColorState() { Color = Color.blue };
         [SerializeField]
@@ -145,7 +145,7 @@ namespace Oculus.Interaction
             while (timer <= targetState.ColorTime);
         }
 
-        private void SetColor(Color color)
+        public void SetColor(Color color)
         {
             _currentColor = color;
             _editor.MaterialPropertyBlock.SetColor(_colorShaderID, color);
