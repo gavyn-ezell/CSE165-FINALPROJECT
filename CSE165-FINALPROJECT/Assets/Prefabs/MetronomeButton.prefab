@@ -79,6 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   digit: 0
   digitText: {fileID: 5934332830821763066}
+  bpmText: {fileID: 0}
+  metRoutineScript: {fileID: 0}
 --- !u!1 &2428162512238817043
 GameObject:
   m_ObjectHideFlags: 0

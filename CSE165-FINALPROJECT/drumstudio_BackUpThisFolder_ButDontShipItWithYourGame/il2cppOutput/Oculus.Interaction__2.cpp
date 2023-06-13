@@ -15974,7 +15974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableColorVisual__ctor_m52E5D6B06
 		// private string _colorShaderPropertyName = "_Color";
 		__this->____colorShaderPropertyName_7 = _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____colorShaderPropertyName_7), (void*)_stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE);
-		// private ColorState _normalColorState = new ColorState() { Color = Color.white };
+		// public ColorState _normalColorState = new ColorState() { Color = Color.white };
 		ColorState_t9CB80C9011357A22FEFDEB8F630B8267193BA76B* L_0 = (ColorState_t9CB80C9011357A22FEFDEB8F630B8267193BA76B*)il2cpp_codegen_object_new(ColorState_t9CB80C9011357A22FEFDEB8F630B8267193BA76B_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		ColorState__ctor_m9934D4611113406E27FF8C1C46A180B8B445F21B(L_0, NULL);

@@ -12,7 +12,7 @@ namespace Oculus.Interaction
         public string digit;
         public TMP_Text digitText;
         public TMP_Text bpmText;
-
+        public MetronomeRoutine metRoutineScript;
 
         
         public void Start()
@@ -32,10 +32,6 @@ namespace Oculus.Interaction
             }
         }
 
-        public void Update()
-        {
-
-        }
         //managing metronome from presses of keypad
         public void keypadPressed()
         {
@@ -56,17 +52,8 @@ namespace Oculus.Interaction
                 Color nextColor = prevState == "OFF" ? new Color(0.0f,1.0f,0.0f,0.137f) : new Color(1.0f,0.137f,0.137f,0.137f);
                 Debug.Log(nextColor);
                 icvScript.SetColor(nextColor);
-               
-               
-               
-               
-               // CHANGING THE DAMN COLOR (WHY IS THIS SO COMPLICATED)
-                // GameObject buttonVisual = GameObject.Find("Visuals").transform.GetChild(0).gameObject;
-                // buttonVisual.name = "AYBBDAADA";
-                // InteractableColorVisual icvScript = buttonVisual.GetComponent<InteractableColorVisual>();
-                // Debug.Log(icvScript);
 
-                // icvScript.SetColor( prevState == "OFF" ? new Color(0.0f,1.0f,0.0f,0.137f) : new Color(1.0f,0.137f,0.137f,0.137f));
+                metRoutineScript.toggleMetronomeCoroutine();
             }
             else if (bpmText.text.Length > 4)
             {
@@ -74,5 +61,6 @@ namespace Oculus.Interaction
                 bpmText.text = currState.Remove(currState.Length-1);
             }
         }
+
     }
 }

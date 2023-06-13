@@ -7,6 +7,7 @@ TagManager:
   - drumstick
   - SamplesInfoPanel
   - bass
+  - teleport
   layers:
   - Default
   - TransparentFX
